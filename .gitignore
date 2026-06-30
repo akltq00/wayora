@@ -2,3 +2,5 @@
 /.eslintrc.js
 /.opencode
 /.prettierrc
+/node_modules
+/dist
