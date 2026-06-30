@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: wayora
+      POSTGRES_USER: wayora
+      POSTGRES_PASSWORD: wayora
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+
+  # Add other services as needed
+  # gateway:
+  #   build: ./services/gateway
+  #   depends_on:
+  #     - postgres
+  #     - redis
+  #   ports:
+  #     - "3000:3000"
+
+volumes:
+  postgres_data:

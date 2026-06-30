@@ -1,0 +1,21 @@
+{
+  "name": "wayora",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=18.0.0",
+    "bun": ">=1.0.0"
+  },
+  "packageManager": "pnpm@8.15.4",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write .",
+    "clean": "turbo clean"
+  },
+  "devDependencies": {
+    "turbo": "^1.10.17",
+    "prettier": "^3.2.5"
+  }
+}
